@@ -1,11 +1,12 @@
-anim = require "stripz"
+stripz = require "stripz"
 love.graphics.setDefaultFilter('nearest', 'nearest')
 
-local a = anim:newStrip({atlas = "laz-mur-spin.png", quadWidth = 46, quadHeight = 38, reverse = false, x = 360, y = 120, readorder = "down", sX = 4})
-local b = anim:newStrip({atlas = "laz-mur-spin.png", quadWidth = 46, quadHeight = 38, reverse = false, x = 360, y = 420, readorder = "down", sX = 4})
-local ns = anim:newStrip({atlas = "mursheet1.png", readorder = "loopover", x = 220, y = 240})
-local bs = anim:newStrip({atlas = "mursheet1.png", readorder = "loopover", x = 520, y = 240})
-local ls = anim:newStrip({atlas = "lazsheet1.png", readorder = "loopover", x = 520, y = 240})
+local a = stripz:newStrip({atlas = "laz-mur-spin.png", quadWidth = 46, quadHeight = 38, reverse = false, x = 360, y = 120, readorder = "down", sX = 4})
+local b = stripz:newStrip({atlas = "laz-mur-spin.png", quadWidth = 46, quadHeight = 38, reverse = false, x = 360, y = 420, readorder = "down", sX = 4})
+local ns = stripz:newStrip({atlas = "mursheet1.png", readorder = "loopover", x = 220, y = 240})
+local bs = stripz:newStrip({atlas = "mursheet1.png", readorder = "loopover", x = 520, y = 240})
+local ls = stripz:newStrip({atlas = "lazsheet1.png", readorder = "loopover", x = 520, y = 240})
+local ls = stripz:newStrip({atlas = "lazsheet1.png", readorder = "loopover", x = 520, y = 240})
 
 local va = 1
 

@@ -6,11 +6,6 @@ mt.__index = mt
 local dt = love.timer.getDelta()
 lg = love.graphics
 
---[[
-    ANIMATION LIB:
-    send in only the atlas location, image width and height and it automatically chops it up into quads 
-    ]]
-
 ---@param framerate number Animation Speed
 ---@param specificGroup "string" Quad group to play (ex. 2-8), defaults to 1 - #quad if n greater/lesser than #quad
 function mt:play(framerate, specificGroup)
